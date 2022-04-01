@@ -6,33 +6,32 @@ import { Heading } from "../Components/heading/Heading";
 
 function LandingPage() {
     return (
-            <div className="main-container">
-                <Navbar />
-  
-                <div className="landing-container">
-                    <Hero />
+        
+        <div className="main-container">
 
-                    <Heading name = "Categories"/>
+            <div className="landing-container">
+                <Hero />
 
-                    <div className="landing-card-component-area">
-                        <Card collection ="Trendy Collection"/>
+                <Heading name="Categories" />
 
-                        <Card collection ="Vibrant Collection"/>
+                <div className="landing-card-component-area">
+                    <Card collection="Trendy Collection" />
 
-                        <Card collection ="Evergreen Collection"/>
-                    </div>
+                    <Card collection="Vibrant Collection" />
 
-                    <Heading name = "Categories"/>
+                    <Card collection="Evergreen Collection" />
+                </div>
 
-                    <div className="category-container">
-                            <SmallCard name ="Men's Apparels" url ={require("../assets/images/man-shirt.jpg")}/>
-                            <SmallCard name ="Women's Apparels" url = {require("../assets/images/women-shirt.jpg")}/>
-                            <SmallCard name ="Kid's Apparels" url = {require("../assets/images/kids-shirt.jpg")}/>
-                            <SmallCard name ="Miscellaneous" url = {require("../assets/images/misc-shirt.jpg")}/>
-                    </div>
-                    
+                <Heading name="Categories" />
+
+                <div className="category-container">
+                    <SmallCard name="Men's Apparels" url={require("../assets/images/man-shirt.jpg")} />
+                    <SmallCard name="Women's Apparels" url={require("../assets/images/women-shirt.jpg")} />
+                    <SmallCard name="Kid's Apparels" url={require("../assets/images/kids-shirt.jpg")} />
+                    <SmallCard name="Miscellaneous" url={require("../assets/images/misc-shirt.jpg")} />
                 </div>
             </div>
+        </div>
     );
 }
 

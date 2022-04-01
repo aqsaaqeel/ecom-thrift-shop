@@ -54,10 +54,10 @@ export function VerticalCard(props) {
                     </div>
 
                     <div className="card-footer">
-                        <div className="card-heading">Vinatge Green Jacket</div>
-                        <div className="card-subheading">Rs. 2000</div>
+                        <div className="card-heading">{props.name}</div>
+                        <div className="card-subheading">{props.price}</div>
                         <div className="buttons">
-                            <a className="button button-primary blue">Go to cart</a>
+                            <a className="button button-primary blue">Add to cart</a>
                         </div>
                     </div>
                 </div>

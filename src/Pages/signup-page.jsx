@@ -5,7 +5,6 @@ import { Link } from "react-router-dom"
 export default function SignupPage() {
     return (
         <div class="main-container">
-        <Navbar />
         <div class="content-container">
             <div class="login-container">
                 <div class="login-elements">

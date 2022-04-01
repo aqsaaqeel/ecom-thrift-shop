@@ -2,10 +2,12 @@ import "./pages-styles/cart-page.css"
 import { Navbar } from "../Components/Navbar/Navbar.jsx";
 import { VerticalCard } from "../Components/Card/Card.jsx";
 import { FilterNavbar } from "../Components/FilterNavbar/FilterNavbar.jsx";
+import { useProduct } from "../service/product_api";
+
 function CartPage() {
+    const { data } = useProduct();
     return (
         <div className="main-container">
-            <Navbar />
 
             <div className="container">
                 <FilterNavbar />
@@ -16,14 +18,11 @@ function CartPage() {
                         <p>(Showing 20 products)</p>
                     </div>
                     <div className="product-container">
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
+                    { data && data.map(item => {
+                        return(
+                            <VerticalCard key = {item.id} name = {item.name} price = {item.price}/>
+                        )
+                    })}
                     </div>
                     </div>
                 </div>
