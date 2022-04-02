@@ -15,7 +15,7 @@ export function Navbar() {
                     <li className="list-item"><Link className="menu-link" to="/login">Login</Link></li>
                     <li className="list-item"><Link className="menu-link" to="/wishlist"><i
                         className="fa fa-heart">Wishlist</i></Link></li>
-                    <li className="list-item"><Link className="menu-link" to="/cart">Cart</Link></li>
+                    <li className="list-item"><Link className="menu-link" to="/product">Cart</Link></li>
                 </ul>
             </div>
         </div>
