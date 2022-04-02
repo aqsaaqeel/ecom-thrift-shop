@@ -1,10 +1,8 @@
 import "./pages-styles/landing-page.css";
 import { VerticalCard } from "../Components/Card/Card";
-import { useProduct } from "../service/product_api";
 
 
 function WishlistPage() {
-    const { data } = useProduct();
     return (
         <div className="main-container">
         <div className="container">
@@ -14,11 +12,8 @@ function WishlistPage() {
                     <p>(Showing 20 products)</p>
                 </div>
                 <div className="card-component-area">
-                    { data && data.map(item => {
-                        return(
-                            <VerticalCard key = {item.id} name = {item.name} price = {item.price}/>
-                        )
-                    })}
+
+                            <VerticalCard />
                 </div>
             </div>
         </div>

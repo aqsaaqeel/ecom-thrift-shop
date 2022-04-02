@@ -5,7 +5,6 @@ import { FilterNavbar } from "../Components/FilterNavbar/FilterNavbar.jsx";
 import { useProduct } from "../service/product_api";
 
 function CartPage() {
-    const { data } = useProduct();
     return (
         <div className="main-container">
 
@@ -18,11 +17,7 @@ function CartPage() {
                         <p>(Showing 20 products)</p>
                     </div>
                     <div className="product-container">
-                    { data && data.map(item => {
-                        return(
-                            <VerticalCard key = {item.id} name = {item.name} price = {item.price}/>
-                        )
-                    })}
+                            <VerticalCard />
                     </div>
                     </div>
                 </div>
