@@ -1,3 +1,4 @@
+import { useProduct } from "../../service/product_api";
 import "./Card.css";
 
 export function Card(props) {
@@ -40,29 +41,35 @@ export function SmallCard(props) {
 }
 
 export function VerticalCard(props) {
+    const { data } = useProduct();
     return (
-        <div className="comp" id="card-component">
-            <div className="photo-card-container">
-                <div className="basic-card-container">
-                    <div className="photo-area">
-                        <div className="photo-comp">
-                            <div className="photo-badge">
-                                <i className="fa fa-heart"></i>
+        data && data.map(item => {
+            return (
+                <div className="comp" id="card-component">
+                    <div className="photo-card-container">
+                        <div className="basic-card-container">
+                            <div className="photo-area">
+                                <div className="photo-comp">
+                                    <div className="photo-badge">
+                                        <i className="fa fa-heart"></i>
+                                    </div>
+                                    <img className="card-photo" src={require("./jacket.jpg")} alt="" />
+                                </div>
                             </div>
-                            <img className="card-photo" src={require("./jacket.jpg")} alt="" />
-                        </div>
-                    </div>
 
-                    <div className="card-footer">
-                        <div className="card-heading">Vinatge Green Jacket</div>
-                        <div className="card-subheading">Rs. 2000</div>
-                        <div className="buttons">
-                            <a className="button button-primary blue">Go to cart</a>
+                            <div className="card-footer">
+                                <div className="card-heading">{item.name}</div>
+                                <div className="card-subheading">{item.price}</div>
+                                <div className="buttons">
+                                    <a className="button button-primary blue">Add to cart</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    )
+            )
+        }))
 }
+
+
 

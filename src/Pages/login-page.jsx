@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 export default function LoginPage() {
     return (
         <div className="main-container">
-            <Navbar />
             <div className="content-container">
                 <div className="login-container">
                     <div className="login-elements">
