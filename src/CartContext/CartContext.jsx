@@ -22,14 +22,14 @@ const CartProvider =({children})=>{
     const [state,dispatch]=useReducer((state,action)=>{
     switch (action.type){
         case "ADD_TO_CART":
-            return {...state,price: state.price+action.payload.price,
+            return {...state, cartItems : state.cartItems + 1, price: state.price+action.payload.price,
                 cartlist: addToCartList(state,action)};
         case "REMOVE_FROM_CART":
-            return {...state,price: state.price-(action.payload.price)};
+            return {...state, cartItems : state.cartItems - 1, price: state.price-(action.payload.price)};
         default :
             return state;
     }
-},{price:0, cartlist:[]})
+},{cartItems : 0, price : 0, cartlist : []})
 
 return <CartContext.Provider value={{state,dispatch}}>
     {children}

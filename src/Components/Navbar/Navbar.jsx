@@ -17,10 +17,11 @@ export function Navbar() {
                     <li className="list-item"><Link className="menu-link" to="/login">Login</Link></li>
                     <li className="list-item"><Link className="menu-link" to="/wishlist"><i
                         className="fa fa-heart">Wishlist</i></Link></li>
-                    <div>
+                    <div className="list-item-badge">
                         <li className="list-item"><Link className="menu-link" to="/product">Cart</Link></li>
-                        <p>{state.cartItems}</p>
-                        </div>
+                        {state.cartItems !== 0 ?
+                        <p class = "badge-item">{state.cartItems}</p> : <p></p>}
+                    </div>
                 </ul>
             </div>
         </div>
