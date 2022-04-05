@@ -64,7 +64,7 @@ export function VerticalCard(props) {
                   </div>
                   <img
                     className="card-photo"
-                    src={require("./jacket.jpg")}
+                    src={item.imagesrc}
                     alt=""
                   />
                 </div>

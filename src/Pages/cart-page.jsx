@@ -9,7 +9,7 @@ function CartPage() {
     <>
       <div className="main-container">
         <div className="container">
-          <div className="content-area">
+          <div className="cart-content-area">
               <div className="content-heading" id="my-wishlist-heading">
                 <h1>Cart Page</h1>
                 <p>{state.cartItems}</p>
