@@ -1,6 +1,6 @@
 export function Hero() {
     return (
-        <div className="content-area">
+        <div className="hero-content-area">
             <div className="hero-image">
                 <img className="hero-img" src={require("./hero.jpg")} alt="Thrift Shop Truck" loading="lazy" />
             </div>

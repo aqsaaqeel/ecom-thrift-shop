@@ -9,8 +9,7 @@ function CartPage() {
     <>
       <div className="main-container">
         <div className="container">
-          <div className="content-area">
-            <div className="card-component-area">
+          <div className="cart-content-area">
               <div className="content-heading" id="my-wishlist-heading">
                 <h1>Cart Page</h1>
                 <p>{state.cartItems}</p>
@@ -23,7 +22,7 @@ function CartPage() {
 
                     <div className="card-footer">
                       <div className="card-heading">Price Details</div>
-                      <div className="card-subheading">Rs. 2000</div>
+                      <div className="card-subheading">Total Amount : Rs. {state.totalPrice}</div>
                       <div className="buttons">
                         <a className="button button-primary grey">Checkout</a>
                       </div>
@@ -34,7 +33,6 @@ function CartPage() {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

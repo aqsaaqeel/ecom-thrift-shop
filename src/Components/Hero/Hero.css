@@ -1,5 +1,6 @@
 .content-area{
     display: flex;
+    margin : 0rem;
 }
 .hero-image .hero-img{
     position: relative;

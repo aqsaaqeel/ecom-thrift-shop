@@ -43,7 +43,7 @@ export function Cart() {
           );
         })
       ) : (
-        <div>No Items in Cart{state.cartItems}</div>
+        <div class = "cart-empty">No Items in Cart{state.cartItems}</div>
       )}
     </div>
   );

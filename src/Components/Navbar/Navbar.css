@@ -48,3 +48,11 @@
     margin: 1rem;
     display: block;
 }
+.list-item-badge{
+    display: flex;
+}
+.badge-item{
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
