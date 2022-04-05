@@ -25,7 +25,8 @@ const CartProvider =({children})=>{
             return {...state, cartItems : state.cartItems + 1, price: state.price+action.payload.price,
                 cartlist: addToCartList(state,action)};
         case "REMOVE_FROM_CART":
-            return {...state, cartItems : state.cartItems - 1, price: state.price-(action.payload.price)};
+            return {...state, cartItems : state.cartItems - 1, price: state.price-(action.payload.price),
+            cartlist : state.cartlist.filter(item => item._id !== action.payload._id)}
         default :
             return state;
     }
