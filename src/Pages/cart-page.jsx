@@ -22,7 +22,7 @@ function CartPage() {
 
                     <div className="card-footer">
                       <div className="card-heading">Price Details</div>
-                      <div className="card-subheading">Rs. 2000</div>
+                      <div className="card-subheading">Total Amount : Rs. {state.totalPrice}</div>
                       <div className="buttons">
                         <a className="button button-primary grey">Checkout</a>
                       </div>
