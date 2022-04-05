@@ -1,7 +1,9 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom"
+import { useCart } from "../../CartContext/CartContext"
 
 export function Navbar() {
+    const {state} = useCart();
     return (
         <div className="nav-container">
             <Link to="/" className="logo-link">
@@ -15,7 +17,10 @@ export function Navbar() {
                     <li className="list-item"><Link className="menu-link" to="/login">Login</Link></li>
                     <li className="list-item"><Link className="menu-link" to="/wishlist"><i
                         className="fa fa-heart">Wishlist</i></Link></li>
-                    <li className="list-item"><Link className="menu-link" to="/product">Cart</Link></li>
+                    <div>
+                        <li className="list-item"><Link className="menu-link" to="/product">Cart</Link></li>
+                        <p>{state.cartItems}</p>
+                        </div>
                 </ul>
             </div>
         </div>
