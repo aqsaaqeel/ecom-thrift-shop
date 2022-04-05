@@ -10,7 +10,6 @@ function CartPage() {
       <div className="main-container">
         <div className="container">
           <div className="content-area">
-            <div className="card-component-area">
               <div className="content-heading" id="my-wishlist-heading">
                 <h1>Cart Page</h1>
                 <p>{state.cartItems}</p>
@@ -34,7 +33,6 @@ function CartPage() {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

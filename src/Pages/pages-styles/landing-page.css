@@ -41,4 +41,7 @@
 .card-link{
     text-decoration: none;
 }
-
+.content-area {
+    width: 100%;
+    margin: 0rem 0rem;
+}

@@ -102,11 +102,10 @@
 
 
 .content-area{
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0 0 2rem;
+    width: 100%;
+    margin : 0rem 20rem;
 }
 .card-component-area{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
