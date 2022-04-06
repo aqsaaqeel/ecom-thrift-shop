@@ -1,6 +1,6 @@
 import "./pages-styles/cart-page.css";
 import { useReducer } from "react";
-import { useCart } from "../CartContext/CartContext";
+import { useCart } from "../Context/CartContext";
 import {Cart} from "../Components/Cart/Cart"
 
 function CartPage() {

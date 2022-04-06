@@ -7,7 +7,7 @@ export const products = [
   {
     _id: uuid(),
     name: "green jacket",
-    imagesrc : "",
+    imagesrc : "https://i.ibb.co/gj2xVRz/jacket.jpg",
     rating : "5",
     price: "2000",
     categoryName: "winter"

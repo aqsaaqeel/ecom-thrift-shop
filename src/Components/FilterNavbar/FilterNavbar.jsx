@@ -1,6 +1,12 @@
+import { addItemToCartHandler } from "../../backend/controllers/CartController"
 import "./FilterNavbar.css"
+import { useProduct } from "../../service/product_api"
+import { useFilter } from "../../Context/FilterContext"
+
 export function FilterNavbar() {
+    const { initialState, filterAction} = useFilter();
     return (
+        // {data && data.map(item => return )}
         <div className="navigation">
             <ul className="main-list">
                 <li>
@@ -19,6 +25,18 @@ export function FilterNavbar() {
                         <a href="#">
                             <span className="title">Price</span>
                         </a>
+                        <div className="nav-sublists">
+                            <ul>
+                                <li>
+                                    <input type="radio" name="c1" id="c1" checked = {initialState.sortBy && initialState.sortBy === "LOW_TO_HIGH"} onClick={() => filterAction({ type : "SORT_PRICE", payload : "LOW_TO_HIGH"})}/>
+                                    <label for="s1">High to Low</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="c1" id="c1" checked = {initialState.sortBy && initialState.sortBy === "HIGH_TO_LOW"} onClick={() => filterAction({ type : "SORT_PRICE", payload : "HIGH_TO_LOW"})}/>
+                                    <label for="s2">Low to high</label>
+                                </li>
+                            </ul>
+                        </div>
                         <a href="#">
                             <span className="title"> Slider Component</span>
                         </a>
@@ -40,7 +58,7 @@ export function FilterNavbar() {
                                 </li>
                                 <li>
                                     <input type="checkbox" name="c1" id="c1" />
-                                    <label for="c1">Men's Clothing</label>
+                                    <label for="c1">Women's Clothing</label>
                                 </li>
                             </ul>
                         </div>
@@ -78,7 +96,7 @@ export function FilterNavbar() {
                     </div>
                 </li>
                 <div className="small-space"></div>
-                <li>
+                {/* <li>
                     <div className="navbar navlist">
                         <div className="head-nav">
                             <a href="#">
@@ -99,7 +117,7 @@ export function FilterNavbar() {
                             </ul>
                         </div>
                     </div>
-                </li>
+                </li> */}
             </ul>
         </div>
     )
