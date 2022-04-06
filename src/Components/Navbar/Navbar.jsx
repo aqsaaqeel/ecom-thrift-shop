@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom"
-import { useCart } from "../../CartContext/CartContext"
+import { useCart } from "../../Context/CartContext"
 
 export function Navbar() {
     const {state} = useCart();
