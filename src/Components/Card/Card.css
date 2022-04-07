@@ -73,13 +73,6 @@
     margin-top: 3rem;
     margin-right: 3rem;
 }
-.card-photo{
-    width:100%;
-    margin-top: 2rem;
-    max-width: 12rem;
-    max-height: 12rem;
-    border-radius: 0.3rem;
-}
 .photo-comp{
     display:flex;
     justify-content: flex-end;
@@ -134,8 +127,8 @@
   .card-photo{
     width:100%;
     margin-top: 2rem;
-    max-width: 15rem;
-    max-height: 25rem;
+    width: 15rem;
+    height: 22.5rem;
     border-radius: 0.3rem;
 }
 .photo-badge{
