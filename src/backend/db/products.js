@@ -10,7 +10,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/gj2xVRz/jacket.jpg",
     rating : "5",
     price: "2000",
-    categoryName: "winter"
+    categoryName: "miscellaneous"
   },
   {
     _id: uuid(),
@@ -18,7 +18,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/9NMxM1J/image2.jpg",
     rating : "4",
     price: "400",
-    categoryName: "winter"
+    categoryName: "men"
   },
   {
     _id: uuid(),
@@ -26,7 +26,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/3hh99ss/image3.jpg",
     rating : "4",
     price: "150",
-    categoryName: "summer"
+    categoryName: "women"
   },
   {
     _id: uuid(),
@@ -34,7 +34,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/d6yWSmD/image4.jpg",
     rating : "4",
     price: "150",
-    categoryName: "summer"
+    categoryName: "miscellaneous"
   },
   {
     _id: uuid(),
@@ -42,7 +42,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/KwZxZCX/image5.jpg",
     rating : "4",
     price: "150",
-    categoryName: "summer"
+    categoryName: "miscellaneous"
   },
   {
     _id: uuid(),
@@ -50,7 +50,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/W6qvBCD/image6.jpg",
     rating : "4",
     price: "700",
-    categoryName: "summer"
+    categoryName: "women"
   },
   {
     _id: uuid(),
@@ -58,7 +58,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/b2KpCvV/image7.jpg",
     rating : "4",
     price: "650",
-    categoryName: "summer"
+    categoryName: "women"
   },
   {
     _id: uuid(),
@@ -66,7 +66,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/MNBHCGP/image8.jpg",
     rating : "4",
     price: "500",
-    categoryName: "summer"
+    categoryName: "men"
   },
   {
     _id: uuid(),
@@ -74,7 +74,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/7bwZr6m/image9.jpg",
     rating : "4",
     price: "2000",
-    categoryName: "summer"
+    categoryName: "miscellaneous"
   },
   {
     _id: uuid(),
@@ -82,7 +82,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/v15JGm2/image10.jpg",
     rating : "4",
     price: "2500",
-    categoryName: "summer"
+    categoryName: "men"
   },
   {
     _id: uuid(),
@@ -90,7 +90,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/yynB1my/image11.jpg",
     rating : "4",
     price: "1600",
-    categoryName: "summer"
+    categoryName: "men"
   },
  {
     _id: uuid(),
@@ -98,7 +98,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/9q4fR1S/image12.jpg",
     rating : "4",
     price: "800",
-    categoryName: "summer"
+    categoryName: "miscellaneous"
   },
   {
     _id: uuid(),
@@ -106,7 +106,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/wWfNRkJ/image13.jpg",
     rating : "4",
     price: "1700",
-    categoryName: "summer"
+    categoryName: "women"
   },
   {
     _id: uuid(),
@@ -114,7 +114,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/tDkxyvW/image14.jpg",
     rating : "4",
     price: "300",
-    categoryName: "summer"
+    categoryName: "kids"
   },
   {
     _id: uuid(),
@@ -122,7 +122,7 @@ export const products = [
     imagesrc : "https://i.ibb.co/y0KkVbz/image15.jpg",
     rating : "4",
     price: "350",
-    categoryName: "summer"
+    categoryName: "kids"
   }
   
 ];

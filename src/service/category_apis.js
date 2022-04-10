@@ -7,10 +7,10 @@ function useCategories() {
   useEffect(() => 
       axios
       .get("/api/categories")
-      .then((response) => setCategory(response.data.products))
+      .then((response) => setCategory(response.data.category))
       .catch((err) => console.log(err)),
    []);
-  return  category 
+  return {category,}
   
 }
 export { useCategories };
