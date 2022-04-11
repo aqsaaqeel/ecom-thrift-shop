@@ -2,7 +2,7 @@ import { useProduct } from "../../service/product_api";
 import "./Card.css";
 import { useCart } from "../../Context/CartContext";
 import { useFilter } from "../../Context/FilterContext";
-import { itemList, categoryList} from "../../reducerFuncs/priceReducer";
+import { itemList, categoryList, ratingList} from "../../reducerFuncs/priceReducer";
 import { catList } from "../../reducerFuncs/categoryreducer";
 
 export function VerticalCard(props) {
@@ -10,13 +10,18 @@ export function VerticalCard(props) {
   const { state, dispatch } = useCart();
   const { initialState} = useFilter();
   
-  const { sortBy, categorizeByCategory, categorizeByRate} = initialState;
-
+  const { sortBy, categorizeByCategory, categorizeByRating} = initialState;
+  console.log(categorizeByRating)
   const sortedData = sortBy !== "" ? itemList(sortBy, data) : data  
   
   const categoryData = categoryList(categorizeByCategory, data)
 
-  const filteredItemList = categorizeByCategory.length !== 0 ? categoryData : sortedData;
+  const ratingData = ratingList(categorizeByRating, data)
+
+  const catItemList = categorizeByCategory.length !== 0 ? categoryData : sortedData;
+
+  const filteredItemList = categorizeByRating !== "" ? ratingData : catItemList
+
   return filteredItemList.map((item) => {
     return (
       <div className="comp" id="card-component">
@@ -35,14 +40,14 @@ export function VerticalCard(props) {
               <div className="card-heading">{item.name}</div>
               <div className="card-subheading">{item.price}</div>
               <div className="buttons">
-                <a
+                <button
                   className="button button-primary blue"
                   onClick={() => {
                     dispatch({ type: "ADD_TO_CART", payload: item });
                   }}
                 >
                   Add to cart
-                </a>
+                </button>
               </div>
             </div>
           </div>
