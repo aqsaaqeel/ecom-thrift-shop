@@ -35,14 +35,14 @@ export function VerticalCard(props) {
               <div className="card-heading">{item.name}</div>
               <div className="card-subheading">{item.price}</div>
               <div className="buttons">
-                <a
+                <button
                   className="button button-primary blue"
                   onClick={() => {
                     dispatch({ type: "ADD_TO_CART", payload: item });
                   }}
                 >
                   Add to cart
-                </a>
+                </button>
               </div>
             </div>
           </div>

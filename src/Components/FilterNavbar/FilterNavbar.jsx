@@ -7,8 +7,7 @@ import {catList} from "../../reducerFuncs/categoryreducer"
 
    
 export function FilterNavbar() {
-    const { initialState : {sortBy, categorizeByCategory, categorizeByRating }, filterAction} = useFilter();
-    // const { data } = useProduct();
+    const { initialState : {sortBy, categorizeByCategory, categorizeByRating }, filterAction} = useFilter()
  
     return (
         
@@ -33,11 +32,11 @@ export function FilterNavbar() {
                         <div className="nav-sublists">
                             <ul>
                                 <li>
-                                    <input type="radio" name="c1" id="c1" checked = {sortBy && sortBy === "LOW_TO_HIGH"} onClick={() => filterAction({ type : "SORT_PRICE", payload : "LOW_TO_HIGH"})}/>
+                                    <input type="radio" name="c1" id="s1" checked = {sortBy && sortBy === "LOW_TO_HIGH"} onClick={() => filterAction({ type : "SORT_PRICE", payload : "LOW_TO_HIGH"})}/>
                                     <label htmlFor="s1">High to Low</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="c1" id="c1" checked = {sortBy && sortBy === "HIGH_TO_LOW"} onClick={() => filterAction({ type : "SORT_PRICE", payload : "HIGH_TO_LOW"})}/>
+                                    <input type="radio" name="c1" id="s2" checked = {sortBy && sortBy === "HIGH_TO_LOW"} onClick={() => filterAction({ type : "SORT_PRICE", payload : "HIGH_TO_LOW"})}/>
                                     <label htmlFor="s2">Low to high</label>
                                 </li>
                             </ul>
@@ -80,19 +79,19 @@ export function FilterNavbar() {
                         <div className="nav-sublists">
                             <ul>
                                 <li>
-                                    <input type="radio" name="c1" id="c1" />
+                                    <input type="radio" name="c1" id="s1" />
                                     <label htmlFor="s1">4 Stars & above</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="c1" id="c1" />
+                                    <input type="radio" name="c1" id="s2" />
                                     <label htmlFor="s2">3 Stars & above</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="c1" id="c1" />
+                                    <input type="radio" name="c1" id="s3" />
                                     <label htmlFor="s3">2 Stars & above</label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="c1" id="c1" />
+                                    <input type="radio" name="c1" id="s4" />
                                     <label htmlFor="s4">1 Stars & above</label>
                                 </li>
                             </ul>
