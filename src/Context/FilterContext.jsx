@@ -8,7 +8,7 @@ const FilterProvider = ({ children }) => {
     const [initialState, filterAction] = useReducer( priceReducer, {
         sortBy : "",
         categorizeByCategory : "",
-        categorizeByRating : 0
+        categorizeByRating : "",
     });
     return(
         <FilterContext.Provider value = {{initialState, filterAction}}>

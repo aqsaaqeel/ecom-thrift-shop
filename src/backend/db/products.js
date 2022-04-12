@@ -32,7 +32,7 @@ export const products = [
     _id: uuid(),
     name: "Black cap",
     imagesrc : "https://i.ibb.co/d6yWSmD/image4.jpg",
-    rating : "4",
+    rating : "3",
     price: "150",
     categoryName: "miscellaneous"
   },
@@ -40,7 +40,7 @@ export const products = [
     _id: uuid(),
     name: "White cap",
     imagesrc : "https://i.ibb.co/KwZxZCX/image5.jpg",
-    rating : "4",
+    rating : "2",
     price: "150",
     categoryName: "miscellaneous"
   },
@@ -48,7 +48,7 @@ export const products = [
     _id: uuid(),
     name: "Red smock dress",
     imagesrc : "https://i.ibb.co/W6qvBCD/image6.jpg",
-    rating : "4",
+    rating : "5",
     price: "700",
     categoryName: "women"
   },
@@ -88,7 +88,7 @@ export const products = [
     _id: uuid(),
     name: "Leather Jacket Men",
     imagesrc : "https://i.ibb.co/yynB1my/image11.jpg",
-    rating : "4",
+    rating : "3",
     price: "1600",
     categoryName: "men"
   },
@@ -96,7 +96,7 @@ export const products = [
     _id: uuid(),
     name: "Red Flannel Shirt",
     imagesrc : "https://i.ibb.co/9q4fR1S/image12.jpg",
-    rating : "4",
+    rating : "2",
     price: "800",
     categoryName: "miscellaneous"
   },
@@ -112,7 +112,7 @@ export const products = [
     _id: uuid(),
     name: "Kid's Kurta",
     imagesrc : "https://i.ibb.co/tDkxyvW/image14.jpg",
-    rating : "4",
+    rating : "1",
     price: "300",
     categoryName: "kids"
   },
@@ -120,7 +120,7 @@ export const products = [
     _id: uuid(),
     name: "Kid's frock",
     imagesrc : "https://i.ibb.co/y0KkVbz/image15.jpg",
-    rating : "4",
+    rating : "3",
     price: "350",
     categoryName: "kids"
   }

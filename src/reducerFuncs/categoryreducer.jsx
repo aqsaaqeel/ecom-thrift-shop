@@ -29,12 +29,5 @@ export const categories = [
   categories.filter((item) => {
       catList.push(item.categoryName);
   })
-//   const categoryItemList = (categorizeBy, cardData) =>{
-//       return(   
-//                 cardData.filter((item) => {      
-//                 item.categoryName === categorizeBy;
-//                 }))
-//   }
-  
 
   export {catList, }

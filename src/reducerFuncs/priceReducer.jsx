@@ -7,6 +7,8 @@ export function priceReducer(state, action) {
       return { ...state, sortBy: action.payload };
     case "SORT_CATEGORY":
       return { ...state, categorizeByCategory: action.payload };
+    case "SORT_RATING":
+      return { ...state, categorizeByRating: action.payload };
   }
 }
 
@@ -37,6 +39,29 @@ export function categoryList(categorizeByCategory, data) {
     case "miscellaneous":
       return [...data].filter(
         (currDataCategory) => currDataCategory.categoryName === "miscellaneous"
+      );
+    default:
+      return [data];
+  }
+}
+
+export function ratingList(categorizeByRate, data) {
+  switch (categorizeByRate) {
+    case "4-5":
+      return [...data].filter(
+        (currRateCategory) => currRateCategory.rating === "4"
+      );
+    case "3-4":
+      return [...data].filter(
+        (currRateCategory) => currRateCategory.rating === "3"
+      );
+    case "2-3":
+      return [...data].filter(
+        (currRateCategory) => currRateCategory.rating === "2"
+      );
+    case "1-2":
+      return [...data].filter(
+        (currRateCategory) => currRateCategory.rating === "1"
       );
     default:
       return [data];
