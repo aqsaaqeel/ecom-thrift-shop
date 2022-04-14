@@ -1,6 +1,7 @@
 import { useProduct } from "../../service/product_api";
 import "./Card.css";
 import { useCart } from "../../Context/CartContext";
+import { useWishlist } from "../../Context/WishlistContext";
 import { useFilter } from "../../Context/FilterContext";
 import { itemList, categoryList, ratingList} from "../../reducerFuncs/priceReducer";
 import { catList } from "../../reducerFuncs/categoryreducer";
@@ -8,10 +9,11 @@ import { catList } from "../../reducerFuncs/categoryreducer";
 export function VerticalCard(props) {
   const { data } = useProduct();
   const { state, dispatch } = useCart();
+  const { dispatchWishlist } = useWishlist();
   const { initialState} = useFilter();
   
   const { sortBy, categorizeByCategory, categorizeByRating} = initialState;
-  console.log(categorizeByRating)
+
   const sortedData = sortBy !== "" ? itemList(sortBy, data) : data  
   
   const categoryData = categoryList(categorizeByCategory, data)
@@ -47,6 +49,15 @@ export function VerticalCard(props) {
                   }}
                 >
                   Add to cart
+                </button>
+                <br></br>
+                <button
+                  className="button button-secondary"
+                  onClick={() => {
+                    dispatchWishlist({ type: "ADD_TO_WISHLIST", payload: item });
+                  }}
+                >
+                  Add to wishlist
                 </button>
               </div>
             </div>
