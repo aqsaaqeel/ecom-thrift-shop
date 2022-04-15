@@ -43,7 +43,7 @@ export function Wishlist() {
           );
         })
       ) : (
-        <div class = "cart-empty">No Items in Wishlist{state.wishlistItems}</div>
+        <div class = "cart-empty">No Items in Wishlist</div>
       )}
     </div>
   );
