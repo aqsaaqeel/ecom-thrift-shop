@@ -1,5 +1,6 @@
 import "./pages-styles/landing-page.css";
-import { VerticalCard } from "../Components/Card/Card";
+// import { VerticalCard } from "../Components/Card/Card";
+import { Wishlist } from "../Components/Wishlist/Wishlist"
 
 function WishlistPage() {
   return (
@@ -8,10 +9,9 @@ function WishlistPage() {
         <div className="content-area">
           <div className="content-heading" id="my-wishlist-heading">
             <h1>My Wishlist</h1>
-            <p>(Showing 20 products)</p>
           </div>
           <div className="card-component-area">
-            <VerticalCard />
+            <Wishlist />
           </div>
         </div>
       </div>
