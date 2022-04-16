@@ -22,9 +22,9 @@ const WishlistProvider =({children})=>{
     const [state,dispatchWishlist]=useReducer((state,action)=>{
     switch (action.type){
         case "ADD_TO_WISHLIST":
-            return {...state, wishlistItems : state.wishlistItems + 1, wishlistList: addToWishlistList(state,action)};
+            return {...state, wishlistList: addToWishlistList(state,action)};
         case "REMOVE_FROM_WISHLIST":
-            return {...state, wishlistItems : state.wishlistItems - 1, wishlistList : state.wishlistList.filter(item => item._id !== action.payload._id)}
+            return {...state, wishlistList : state.wishlistList.filter(item => item._id !== action.payload._id)}
         default :
             return state;
     }
